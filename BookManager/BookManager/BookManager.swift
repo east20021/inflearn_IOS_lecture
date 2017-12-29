@@ -11,7 +11,7 @@ import Foundation
 class BookManager {
     var bookList = [Book]()
     
-    func addBook(book: Book) {
+    func addBook(_ book: Book) {
         bookList.append(book)
         print("added book :", book.name)
     }
@@ -19,7 +19,10 @@ class BookManager {
     func showAllBook() -> String {
         var tempStr = "Book: "
         for bookName in bookList {
-            tempStr += bookName.name + " "
+            tempStr += "Name :\(bookName.name)\n "
+            tempStr += "Genre :\(bookName.genre)\n "
+            tempStr += "Author :\(bookName.author)\n "
+            tempStr += "----------------------------\n"
         }
         return tempStr
     }
@@ -28,7 +31,7 @@ class BookManager {
         return bookList.count
     }
     
-    func findBook(book: String) -> Bool {
+    func findBook(_ book: String) -> Bool {
         for bookTemp in bookList {
             if bookTemp.name == book {
                 return true
@@ -37,13 +40,15 @@ class BookManager {
         return false
     }
     
-    func removeBook(book: String) {
+    func removeBook(_ book: String) -> Bool{
         for bookTemp in bookList {
             if bookTemp.name == book {
                 let index = (bookList as NSArray).index(of: bookTemp)
                 bookList.remove(at: index)
+                return true
             }
         }
+        return false
     }
     
 }
