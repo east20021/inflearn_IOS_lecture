@@ -17,6 +17,7 @@
 		9B538CEE2001DB1900F7421E /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B538CE92001DB1900F7421E /* snow.png */; };
 		9B538CEF2001DB1900F7421E /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B538CEA2001DB1900F7421E /* sunny.png */; };
 		9B538CF02001DB1900F7421E /* blizzard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B538CEB2001DB1900F7421E /* blizzard.png */; };
+		9B538D6C20024EFF00F7421E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B538D6B20024EFF00F7421E /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9B538CE92001DB1900F7421E /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snow.png; path = "Section+11-2.+WeatherTableImages/snow.png"; sourceTree = SOURCE_ROOT; };
 		9B538CEA2001DB1900F7421E /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sunny.png; path = "Section+11-2.+WeatherTableImages/sunny.png"; sourceTree = SOURCE_ROOT; };
 		9B538CEB2001DB1900F7421E /* blizzard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blizzard.png; path = "Section+11-2.+WeatherTableImages/blizzard.png"; sourceTree = SOURCE_ROOT; };
+		9B538D6B20024EFF00F7421E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				9B538CE62001DB0100F7421E /* Resource */,
 				9B538CD42001DACE00F7421E /* AppDelegate.swift */,
 				9B538CD62001DACE00F7421E /* ViewController.swift */,
+				9B538D6B20024EFF00F7421E /* TableViewCell.swift */,
 				9B538CD82001DACE00F7421E /* Main.storyboard */,
 				9B538CDB2001DACE00F7421E /* Assets.xcassets */,
 				9B538CDD2001DACE00F7421E /* LaunchScreen.storyboard */,
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B538D6C20024EFF00F7421E /* TableViewCell.swift in Sources */,
 				9B538CD72001DACE00F7421E /* ViewController.swift in Sources */,
 				9B538CD52001DACE00F7421E /* AppDelegate.swift in Sources */,
 			);
