@@ -10,10 +10,15 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, XMLParserDelegate, UITableViewDelegate {
     
-    var datalist: [[String: String]] = []
-    var detailData: [String: String] = [:]
-    var elementTemp: String = ""
-    var blank: Bool = false
+    
+    //parsing xml
+//    var datalist: [[String: String]] = []
+//    var detailData: [String: String] = [:]
+//    var elementTemp: String = ""
+//    var blank: Bool = false
+    
+    //parsing json
+    var datalist = NSDictionary()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,38 +44,57 @@ class ViewController: UIViewController, UITableViewDataSource, XMLParserDelegate
 //        datalist = [dict1, dict2, dict3, dict4, dict5, dict6, dict7, dict8, dict9, dict10, dict11, dict12, dict13, dict14, dict15, dict16, dict17, dict18, dict19]
         
         //parsing xml
-        let baseURL = "https://raw.githubusercontent.com/ChoiJinYoung/iphonewithswift2/master/weather.xml"
-        let parser = XMLParser(contentsOf: URL(string: baseURL)!)
+//        let baseURL = "https://raw.githubusercontent.com/ChoiJinYoung/iphonewithswift2/master/weather.xml"
+//        let parser = XMLParser(contentsOf: URL(string: baseURL)!)
+//
+//        parser!.delegate = self
+//        parser!.parse()
         
-        parser!.delegate = self
-        parser!.parse()
+        //parsing json
+        let baseURL = URL(string: "https://raw.githubusercontent.com/ChoiJinYoung/iphonewithswift2/master/weather.json")
+        
+        do {
+            self.datalist = try JSONSerialization.jsonObject(with: Data(contentsOf: baseURL!), options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+        } catch {
+            print("Error loading Data")
+        }
+        
+        print(self.datalist)
+        
+       
  
     }
+    //parsing xml start
+//    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
+//        print(elementName)
+//        elementTemp = elementName
+//        blank = true
+//    }
+//
+//    func parser(_ parser: XMLParser, foundCharacters string: String) {
+//        if blank == true && elementTemp != "local" && elementTemp != "weatherinfo" {
+//            detailData[elementTemp] = string
+//            print(string)
+//        }
+//    }
+//
+//    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+//        print(elementName)
+//        if elementName == "local" {
+//            datalist += [detailData]
+//        }
+//        blank = false
+//    }
     
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
-        print(elementName)
-        elementTemp = elementName
-        blank = true
-    }
     
-    func parser(_ parser: XMLParser, foundCharacters string: String) {
-        if blank == true && elementTemp != "local" && elementTemp != "weatherinfo" {
-            detailData[elementTemp] = string
-            print(string)
-        }
-    }
-    
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        print(elementName)
-        if elementName == "local" {
-            datalist += [detailData]
-        }
-        blank = false
-    }
+    //parsing xml end
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datalist.count
+        //parsing xml
+//        return datalist.count
+        //parsing json
+        return ((datalist["weatherinfo"] as! NSDictionary)["local"] as! NSArray).count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -80,16 +104,44 @@ class ViewController: UIViewController, UITableViewDataSource, XMLParserDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WeatherCell
         
-        var dicTemp = datalist[indexPath.row]
-        print(dicTemp)
+        
+        //parsing xml
+//        var dicTemp = datalist[indexPath.row]
+//        print(dicTemp)
+//
+//
+//        let weatherStr = dicTemp["weather"]
+//
+//        cell.WeatherLabel.text = weatherStr
+//        cell.temperatureLabel.text = dicTemp["temperature"]
+//        cell.countryLabel.text = dicTemp["country"]
+//
+//        if weatherStr == "맑음" {
+//            cell.imgView!.image = UIImage(named: "sunny.png")
+//        }else if weatherStr == "비" {
+//            cell.imgView!.image = UIImage(named: "rainy.png")
+//        }else if weatherStr == "흐림" {
+//            cell.imgView!.image = UIImage(named: "cloudy.png")
+//        }else if weatherStr == "우박" {
+//            cell.imgView!.image = UIImage(named: "blizzard.png")
+//        }else if weatherStr == "눈" {
+//            cell.imgView!.image = UIImage(named: "snow.png")
+//        }
+        
+        //parsing json
+        let dicTemp = ((datalist["weatherinfo"] as! NSDictionary)["local"] as! NSArray)[indexPath.row] as! NSDictionary
+        
+    
         
         
-        let weatherStr = dicTemp["weather"]
+        cell.countryLabel.text = dicTemp["country"] as? String
         
+        let weatherStr = dicTemp["weather"] as? String
+
         cell.WeatherLabel.text = weatherStr
-        cell.temperatureLabel.text = dicTemp["temperature"]
-        cell.countryLabel.text = dicTemp["country"]
+        cell.temperatureLabel.text = dicTemp["temperature"] as? String
         
+
         if weatherStr == "맑음" {
             cell.imgView!.image = UIImage(named: "sunny.png")
         }else if weatherStr == "비" {
@@ -101,6 +153,9 @@ class ViewController: UIViewController, UITableViewDataSource, XMLParserDelegate
         }else if weatherStr == "눈" {
             cell.imgView!.image = UIImage(named: "snow.png")
         }
+    
+        
+        
         return cell
     }
     
