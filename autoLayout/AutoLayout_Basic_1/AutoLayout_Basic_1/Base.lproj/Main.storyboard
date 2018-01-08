@@ -19,33 +19,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzl-TA-SAa">
-                                <rect key="frame" x="80" y="70" width="80" height="478"/>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqM-vu-j8t">
-                                <rect key="frame" x="20" y="70" width="40" height="478"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-5h-UsG">
-                                <rect key="frame" x="180" y="70" width="120" height="478"/>
-                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eo-5C-89s">
+                                <rect key="frame" x="217" y="127" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tzl-TA-SAa" firstAttribute="height" secondItem="5q2-5h-UsG" secondAttribute="height" id="1AO-AN-wm6"/>
-                            <constraint firstItem="rqM-vu-j8t" firstAttribute="width" secondItem="tzl-TA-SAa" secondAttribute="width" multiplier="1:2" id="29L-ie-zmU"/>
-                            <constraint firstItem="5q2-5h-UsG" firstAttribute="leading" secondItem="tzl-TA-SAa" secondAttribute="trailing" constant="20" id="BWx-Ul-R6H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5q2-5h-UsG" secondAttribute="trailing" constant="20" id="Qfb-70-7fK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tzl-TA-SAa" secondAttribute="bottom" constant="20" id="Z7N-Z4-seI"/>
-                            <constraint firstItem="tzl-TA-SAa" firstAttribute="leading" secondItem="rqM-vu-j8t" secondAttribute="trailing" constant="20" id="ef3-eM-LZf"/>
-                            <constraint firstItem="rqM-vu-j8t" firstAttribute="height" secondItem="tzl-TA-SAa" secondAttribute="height" id="ehi-sO-EeH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5q2-5h-UsG" secondAttribute="bottom" constant="20" id="jeQ-6A-SL1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rqM-vu-j8t" secondAttribute="bottom" constant="20" id="osG-nd-nbe"/>
-                            <constraint firstItem="rqM-vu-j8t" firstAttribute="width" secondItem="5q2-5h-UsG" secondAttribute="width" multiplier="1:3" id="ptR-gH-fFU"/>
-                            <constraint firstItem="rqM-vu-j8t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="s6e-2Q-WUi"/>
-                            <constraint firstItem="rqM-vu-j8t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sGh-UB-mpJ"/>
+                            <constraint firstItem="3eo-5C-89s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="V6l-Hf-Ng4"/>
+                            <constraint firstItem="3eo-5C-89s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="YaF-qV-7CT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
