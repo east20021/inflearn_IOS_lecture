@@ -18,27 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0E-FL-1Mq">
-                                <rect key="frame" x="220" y="95" width="48" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYs-av-jP2">
-                                <rect key="frame" x="52" y="95" width="94" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home300" translatesAutoresizingMaskIntoConstraints="NO" id="bOG-bW-6Im">
+                                <rect key="frame" x="10" y="10" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home50x50" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-Qq-cBc">
+                                <rect key="frame" x="10" y="330" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="HYs-av-jP2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="LmI-P9-3P7"/>
-                            <constraint firstItem="S0E-FL-1Mq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="fZN-wf-ple"/>
-                            <constraint firstItem="S0E-FL-1Mq" firstAttribute="leading" secondItem="HYs-av-jP2" secondAttribute="trailing" constant="74" id="qhi-CC-Y2e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S0E-FL-1Mq" secondAttribute="trailing" constant="52" id="uCh-gF-EIl"/>
-                            <constraint firstItem="HYs-av-jP2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="xX0-cA-RHf"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -47,4 +36,8 @@
             <point key="canvasLocation" x="134.78260869565219" y="132.88043478260872"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home300" width="300" height="300"/>
+        <image name="home50x50" width="50" height="50"/>
+    </resources>
 </document>
