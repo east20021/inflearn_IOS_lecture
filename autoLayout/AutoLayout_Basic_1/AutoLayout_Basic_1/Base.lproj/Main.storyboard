@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,15 +19,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eo-5C-89s">
-                                <rect key="frame" x="217" y="127" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-fu-gjf">
+                                <rect key="frame" x="16" y="57" width="240" height="303"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weatherMark1" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-Cu-DvP">
+                                <rect key="frame" x="97.5" y="36.5" width="77" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="1Ec-BC-XrY"/>
+                                    <constraint firstAttribute="height" constant="41" id="92Q-ce-EEX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3eo-5C-89s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="V6l-Hf-Ng4"/>
-                            <constraint firstItem="3eo-5C-89s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="YaF-qV-7CT"/>
+                            <constraint firstItem="Dav-fu-gjf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="MQw-qN-5Ib"/>
+                            <constraint firstItem="hsH-Cu-DvP" firstAttribute="centerX" secondItem="Dav-fu-gjf" secondAttribute="centerX" id="OJv-Mt-Xy1"/>
+                            <constraint firstItem="hsH-Cu-DvP" firstAttribute="centerY" secondItem="Dav-fu-gjf" secondAttribute="top" id="RQZ-l2-fGh"/>
+                            <constraint firstItem="Dav-fu-gjf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cWs-0D-mZo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dav-fu-gjf" secondAttribute="bottom" constant="208" id="oBD-3L-Jai"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dav-fu-gjf" secondAttribute="trailing" constant="64" id="qw9-1f-Xnm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,4 +48,7 @@
             <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="weatherMark1" width="512" height="512"/>
+    </resources>
 </document>
