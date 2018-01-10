@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,36 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-fu-gjf">
-                                <rect key="frame" x="16" y="57" width="240" height="303"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weatherMark1" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-Cu-DvP">
-                                <rect key="frame" x="97.5" y="36.5" width="77" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="1Ec-BC-XrY"/>
-                                    <constraint firstAttribute="height" constant="41" id="92Q-ce-EEX"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="251" text="La" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI9-uP-F0M">
+                                <rect key="frame" x="20" y="40" width="82.5" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISE-uQ-1do">
+                                <rect key="frame" x="212" y="64" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Dav-fu-gjf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="MQw-qN-5Ib"/>
-                            <constraint firstItem="hsH-Cu-DvP" firstAttribute="centerX" secondItem="Dav-fu-gjf" secondAttribute="centerX" id="OJv-Mt-Xy1"/>
-                            <constraint firstItem="hsH-Cu-DvP" firstAttribute="centerY" secondItem="Dav-fu-gjf" secondAttribute="top" id="RQZ-l2-fGh"/>
-                            <constraint firstItem="Dav-fu-gjf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cWs-0D-mZo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dav-fu-gjf" secondAttribute="bottom" constant="208" id="oBD-3L-Jai"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dav-fu-gjf" secondAttribute="trailing" constant="64" id="qw9-1f-Xnm"/>
+                            <constraint firstItem="ISE-uQ-1do" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Qan-cx-pfe"/>
+                            <constraint firstItem="hI9-uP-F0M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RWX-Lp-e68"/>
+                            <constraint firstItem="hI9-uP-F0M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VF0-oT-i9a"/>
+                            <constraint firstItem="ISE-uQ-1do" firstAttribute="leading" secondItem="hI9-uP-F0M" secondAttribute="trailing" priority="250" constant="8" id="njH-j6-CLI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ISE-uQ-1do" secondAttribute="trailing" constant="14" id="tFe-hy-FhV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="133.09859154929578"/>
+            <point key="canvasLocation" x="134.78260869565219" y="132.88043478260872"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="weatherMark1" width="512" height="512"/>
-    </resources>
 </document>
