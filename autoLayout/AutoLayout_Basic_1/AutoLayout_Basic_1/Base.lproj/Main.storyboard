@@ -22,18 +22,33 @@
                                 <rect key="frame" x="10" y="10" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home50x50" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-Qq-cBc">
-                                <rect key="frame" x="10" y="330" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d2-ev-u9h">
+                                <rect key="frame" x="46" y="450" width="200" height="63"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1ET-5a-4Cj"/>
+                                    <constraint firstAttribute="height" constant="63" id="MPV-vj-us2"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home50x50" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-Qq-cBc">
+                                <rect key="frame" x="56" y="456" width="50" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hRG-Qq-cBc" firstAttribute="centerY" secondItem="6d2-ev-u9h" secondAttribute="centerY" id="8KF-5u-Qcx"/>
+                            <constraint firstItem="hRG-Qq-cBc" firstAttribute="leading" secondItem="6d2-ev-u9h" secondAttribute="leading" constant="10" id="MML-15-EgC"/>
+                            <constraint firstItem="6d2-ev-u9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="Ujf-uf-Kmu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6d2-ev-u9h" secondAttribute="bottom" constant="55" id="vnU-40-Njm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134.78260869565219" y="132.88043478260872"/>
+            <point key="canvasLocation" x="133.125" y="132.04225352112675"/>
         </scene>
     </scenes>
     <resources>
