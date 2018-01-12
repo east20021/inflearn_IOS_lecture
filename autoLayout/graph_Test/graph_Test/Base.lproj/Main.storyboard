@@ -35,11 +35,11 @@
                                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFM-pl-u7i">
-                                        <rect key="frame" x="256.5" y="0.0" width="39.5" height="275"/>
+                                        <rect key="frame" x="256.5" y="137.5" width="39.5" height="137.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11q-K2-TGp">
-                                        <rect key="frame" x="316" y="0.0" width="39" height="275"/>
+                                        <rect key="frame" x="316" y="27.5" width="39" height="247.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="072-JN-gJc">
@@ -65,10 +65,10 @@
                                     <constraint firstItem="oEe-U9-S10" firstAttribute="height" secondItem="HVc-tA-ocN" secondAttribute="height" multiplier="0.9" id="Xf1-gq-eMp"/>
                                     <constraint firstItem="11q-K2-TGp" firstAttribute="width" secondItem="TQh-ja-1AO" secondAttribute="width" id="YAD-fe-Q6P"/>
                                     <constraint firstItem="072-JN-gJc" firstAttribute="width" secondItem="TQh-ja-1AO" secondAttribute="width" id="YxI-P4-puh"/>
-                                    <constraint firstItem="11q-K2-TGp" firstAttribute="height" secondItem="HVc-tA-ocN" secondAttribute="height" id="ZgC-SJ-Am4"/>
+                                    <constraint firstItem="11q-K2-TGp" firstAttribute="height" secondItem="HVc-tA-ocN" secondAttribute="height" multiplier="0.9" id="ZgC-SJ-Am4"/>
                                     <constraint firstItem="TQh-ja-1AO" firstAttribute="leading" secondItem="HVc-tA-ocN" secondAttribute="leading" constant="20" id="a2Z-ML-ztk"/>
                                     <constraint firstAttribute="bottom" secondItem="072-JN-gJc" secondAttribute="bottom" id="cPh-Z6-hc9"/>
-                                    <constraint firstItem="aFM-pl-u7i" firstAttribute="height" secondItem="HVc-tA-ocN" secondAttribute="height" id="ezT-BJ-PIc"/>
+                                    <constraint firstItem="aFM-pl-u7i" firstAttribute="height" secondItem="HVc-tA-ocN" secondAttribute="height" multiplier="0.5" id="ezT-BJ-PIc"/>
                                     <constraint firstAttribute="bottom" secondItem="wdE-hE-Zcw" secondAttribute="bottom" id="fOg-Sr-3Rn"/>
                                     <constraint firstItem="wdE-hE-Zcw" firstAttribute="width" secondItem="TQh-ja-1AO" secondAttribute="width" id="myr-5V-NC6"/>
                                     <constraint firstItem="wdE-hE-Zcw" firstAttribute="height" secondItem="HVc-tA-ocN" secondAttribute="height" multiplier="0.44" id="wMp-3E-yko"/>
@@ -84,6 +84,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="graph1height" destination="BQA-VX-w0v" id="59k-gI-qqH"/>
+                        <outlet property="graph2height" destination="IRU-uc-SeG" id="Rdp-Np-Zev"/>
+                        <outlet property="graph3height" destination="Xf1-gq-eMp" id="mVY-Be-d24"/>
+                        <outlet property="graph4height" destination="wMp-3E-yko" id="AA0-kb-VGe"/>
+                        <outlet property="graph5height" destination="ezT-BJ-PIc" id="FPR-UD-jPq"/>
+                        <outlet property="graph6height" destination="ZgC-SJ-Am4" id="6Tu-A9-3Ao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
