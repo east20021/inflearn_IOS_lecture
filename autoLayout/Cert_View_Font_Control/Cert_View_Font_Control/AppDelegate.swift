@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  AutoLayout_calculator
+//  Cert_View_Font_Control
 //
 //  Created by lee on 2018. 1. 11..
 //  Copyright © 2018년 smith. All rights reserved.

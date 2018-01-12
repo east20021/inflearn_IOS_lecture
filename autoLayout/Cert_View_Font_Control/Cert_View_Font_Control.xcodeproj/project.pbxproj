@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B538DF220071A4900F7421E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B538DF120071A4900F7421E /* AppDelegate.swift */; };
-		9B538DF420071A4900F7421E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B538DF320071A4900F7421E /* ViewController.swift */; };
-		9B538DF720071A4900F7421E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B538DF520071A4900F7421E /* Main.storyboard */; };
-		9B538DF920071A4900F7421E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B538DF820071A4900F7421E /* Assets.xcassets */; };
-		9B538DFC20071A4900F7421E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B538DFA20071A4900F7421E /* LaunchScreen.storyboard */; };
+		9B538E102007838C00F7421E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B538E0F2007838C00F7421E /* AppDelegate.swift */; };
+		9B538E122007838C00F7421E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B538E112007838C00F7421E /* ViewController.swift */; };
+		9B538E152007838C00F7421E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B538E132007838C00F7421E /* Main.storyboard */; };
+		9B538E172007838C00F7421E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B538E162007838C00F7421E /* Assets.xcassets */; };
+		9B538E1A2007838C00F7421E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B538E182007838C00F7421E /* LaunchScreen.storyboard */; };
+		9B538E22200783D900F7421E /* Cert_BG.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9B538E21200783D900F7421E /* Cert_BG.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B538DEE20071A4800F7421E /* AutoLayout_calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout_calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B538DF120071A4900F7421E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B538DF320071A4900F7421E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B538DF620071A4900F7421E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B538DF820071A4900F7421E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9B538DFB20071A4900F7421E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9B538DFD20071A4900F7421E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B538E0C2007838C00F7421E /* Cert_View_Font_Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cert_View_Font_Control.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B538E0F2007838C00F7421E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B538E112007838C00F7421E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B538E142007838C00F7421E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B538E162007838C00F7421E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B538E192007838C00F7421E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B538E1B2007838C00F7421E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B538E21200783D900F7421E /* Cert_BG.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cert_BG.PNG; path = "../../Lecture Image Resource (1)/Cert_BG.PNG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B538DEB20071A4800F7421E /* Frameworks */ = {
+		9B538E092007838C00F7421E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +37,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B538DE520071A4800F7421E = {
+		9B538E032007838C00F7421E = {
 			isa = PBXGroup;
 			children = (
-				9B538DF020071A4800F7421E /* AutoLayout_calculator */,
-				9B538DEF20071A4800F7421E /* Products */,
+				9B538E0E2007838C00F7421E /* Cert_View_Font_Control */,
+				9B538E0D2007838C00F7421E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9B538DEF20071A4800F7421E /* Products */ = {
+		9B538E0D2007838C00F7421E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B538DEE20071A4800F7421E /* AutoLayout_calculator.app */,
+				9B538E0C2007838C00F7421E /* Cert_View_Font_Control.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B538DF020071A4800F7421E /* AutoLayout_calculator */ = {
+		9B538E0E2007838C00F7421E /* Cert_View_Font_Control */ = {
 			isa = PBXGroup;
 			children = (
-				9B538DF120071A4900F7421E /* AppDelegate.swift */,
-				9B538DF320071A4900F7421E /* ViewController.swift */,
-				9B538DF520071A4900F7421E /* Main.storyboard */,
-				9B538DF820071A4900F7421E /* Assets.xcassets */,
-				9B538DFA20071A4900F7421E /* LaunchScreen.storyboard */,
-				9B538DFD20071A4900F7421E /* Info.plist */,
+				9B538E21200783D900F7421E /* Cert_BG.PNG */,
+				9B538E0F2007838C00F7421E /* AppDelegate.swift */,
+				9B538E112007838C00F7421E /* ViewController.swift */,
+				9B538E132007838C00F7421E /* Main.storyboard */,
+				9B538E162007838C00F7421E /* Assets.xcassets */,
+				9B538E182007838C00F7421E /* LaunchScreen.storyboard */,
+				9B538E1B2007838C00F7421E /* Info.plist */,
 			);
-			path = AutoLayout_calculator;
+			path = Cert_View_Font_Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B538DED20071A4800F7421E /* AutoLayout_calculator */ = {
+		9B538E0B2007838C00F7421E /* Cert_View_Font_Control */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B538E0020071A4900F7421E /* Build configuration list for PBXNativeTarget "AutoLayout_calculator" */;
+			buildConfigurationList = 9B538E1E2007838C00F7421E /* Build configuration list for PBXNativeTarget "Cert_View_Font_Control" */;
 			buildPhases = (
-				9B538DEA20071A4800F7421E /* Sources */,
-				9B538DEB20071A4800F7421E /* Frameworks */,
-				9B538DEC20071A4800F7421E /* Resources */,
+				9B538E082007838C00F7421E /* Sources */,
+				9B538E092007838C00F7421E /* Frameworks */,
+				9B538E0A2007838C00F7421E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AutoLayout_calculator;
-			productName = AutoLayout_calculator;
-			productReference = 9B538DEE20071A4800F7421E /* AutoLayout_calculator.app */;
+			name = Cert_View_Font_Control;
+			productName = Cert_View_Font_Control;
+			productReference = 9B538E0C2007838C00F7421E /* Cert_View_Font_Control.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9B538DE620071A4800F7421E /* Project object */ = {
+		9B538E042007838C00F7421E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = smith;
 				TargetAttributes = {
-					9B538DED20071A4800F7421E = {
+					9B538E0B2007838C00F7421E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 9B538DE920071A4800F7421E /* Build configuration list for PBXProject "AutoLayout_calculator" */;
+			buildConfigurationList = 9B538E072007838C00F7421E /* Build configuration list for PBXProject "Cert_View_Font_Control" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,54 +111,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 9B538DE520071A4800F7421E;
-			productRefGroup = 9B538DEF20071A4800F7421E /* Products */;
+			mainGroup = 9B538E032007838C00F7421E;
+			productRefGroup = 9B538E0D2007838C00F7421E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B538DED20071A4800F7421E /* AutoLayout_calculator */,
+				9B538E0B2007838C00F7421E /* Cert_View_Font_Control */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9B538DEC20071A4800F7421E /* Resources */ = {
+		9B538E0A2007838C00F7421E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B538DFC20071A4900F7421E /* LaunchScreen.storyboard in Resources */,
-				9B538DF920071A4900F7421E /* Assets.xcassets in Resources */,
-				9B538DF720071A4900F7421E /* Main.storyboard in Resources */,
+				9B538E22200783D900F7421E /* Cert_BG.PNG in Resources */,
+				9B538E1A2007838C00F7421E /* LaunchScreen.storyboard in Resources */,
+				9B538E172007838C00F7421E /* Assets.xcassets in Resources */,
+				9B538E152007838C00F7421E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B538DEA20071A4800F7421E /* Sources */ = {
+		9B538E082007838C00F7421E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B538DF420071A4900F7421E /* ViewController.swift in Sources */,
-				9B538DF220071A4900F7421E /* AppDelegate.swift in Sources */,
+				9B538E122007838C00F7421E /* ViewController.swift in Sources */,
+				9B538E102007838C00F7421E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B538DF520071A4900F7421E /* Main.storyboard */ = {
+		9B538E132007838C00F7421E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B538DF620071A4900F7421E /* Base */,
+				9B538E142007838C00F7421E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9B538DFA20071A4900F7421E /* LaunchScreen.storyboard */ = {
+		9B538E182007838C00F7421E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B538DFB20071A4900F7421E /* Base */,
+				9B538E192007838C00F7421E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +167,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9B538DFE20071A4900F7421E /* Debug */ = {
+		9B538E1C2007838C00F7421E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		9B538DFF20071A4900F7421E /* Release */ = {
+		9B538E1D2007838C00F7421E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,30 +274,30 @@
 			};
 			name = Release;
 		};
-		9B538E0120071A4900F7421E /* Debug */ = {
+		9B538E1F2007838C00F7421E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLAGA64KZQ;
-				INFOPLIST_FILE = AutoLayout_calculator/Info.plist;
+				INFOPLIST_FILE = Cert_View_Font_Control/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "smith.codesquad.AutoLayout-calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "smith.codesquad.Cert-View-Font-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9B538E0220071A4900F7421E /* Release */ = {
+		9B538E202007838C00F7421E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLAGA64KZQ;
-				INFOPLIST_FILE = AutoLayout_calculator/Info.plist;
+				INFOPLIST_FILE = Cert_View_Font_Control/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "smith.codesquad.AutoLayout-calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "smith.codesquad.Cert-View-Font-Control";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B538DE920071A4800F7421E /* Build configuration list for PBXProject "AutoLayout_calculator" */ = {
+		9B538E072007838C00F7421E /* Build configuration list for PBXProject "Cert_View_Font_Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B538DFE20071A4900F7421E /* Debug */,
-				9B538DFF20071A4900F7421E /* Release */,
+				9B538E1C2007838C00F7421E /* Debug */,
+				9B538E1D2007838C00F7421E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B538E0020071A4900F7421E /* Build configuration list for PBXNativeTarget "AutoLayout_calculator" */ = {
+		9B538E1E2007838C00F7421E /* Build configuration list for PBXNativeTarget "Cert_View_Font_Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B538E0120071A4900F7421E /* Debug */,
-				9B538E0220071A4900F7421E /* Release */,
+				9B538E1F2007838C00F7421E /* Debug */,
+				9B538E202007838C00F7421E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9B538DE620071A4800F7421E /* Project object */;
+	rootObject = 9B538E042007838C00F7421E /* Project object */;
 }
