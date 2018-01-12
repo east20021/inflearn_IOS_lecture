@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up View Controller-->
+        <scene sceneID="6mn-6d-BgE">
+            <objects>
+                <viewController storyboardIdentifier="popupVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pib-SY-xsf" customClass="PopUpViewController" customModule="Popup_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ssu-ui-NKt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F7X-l7-MbP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QP-gR-BQM">
+                                <rect key="frame" x="40" y="123.5" width="295" height="420"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup.png" translatesAutoresizingMaskIntoConstraints="NO" id="fUM-0N-zNk" customClass="pop">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="MLa-wK-4Mc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpF-rA-cgv">
+                                        <rect key="frame" x="20" y="370" width="59" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="닫기"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="pib-SY-xsf" eventType="touchUpInside" id="ckw-KK-9Jr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-ze-vZf">
+                                        <rect key="frame" x="99" y="370" width="176" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="자세히 보기"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUf-GG-JY8">
+                                        <rect key="frame" x="245" y="20" width="30" height="30"/>
+                                        <state key="normal" title="x"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="pib-SY-xsf" eventType="touchUpInside" id="Zb6-UI-va4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fbQ-ze-vZf" firstAttribute="leading" secondItem="MpF-rA-cgv" secondAttribute="trailing" constant="20" id="9TZ-1l-mOP"/>
+                                    <constraint firstAttribute="bottom" secondItem="fbQ-ze-vZf" secondAttribute="bottom" constant="20" id="KFJ-09-ifd"/>
+                                    <constraint firstAttribute="trailing" secondItem="IUf-GG-JY8" secondAttribute="trailing" constant="20" id="LlF-Ij-xuk"/>
+                                    <constraint firstItem="IUf-GG-JY8" firstAttribute="top" secondItem="8QP-gR-BQM" secondAttribute="top" constant="20" id="bHI-fn-NdR"/>
+                                    <constraint firstAttribute="trailing" secondItem="fbQ-ze-vZf" secondAttribute="trailing" constant="20" id="dpX-vx-qI9"/>
+                                    <constraint firstItem="fUM-0N-zNk" firstAttribute="top" secondItem="8QP-gR-BQM" secondAttribute="top" id="gMi-g9-YbY"/>
+                                    <constraint firstAttribute="bottom" secondItem="MpF-rA-cgv" secondAttribute="bottom" constant="20" id="gnV-Cl-ejo"/>
+                                    <constraint firstItem="fbQ-ze-vZf" firstAttribute="top" secondItem="fUM-0N-zNk" secondAttribute="bottom" constant="20" id="jPe-uX-wFM"/>
+                                    <constraint firstItem="fUM-0N-zNk" firstAttribute="leading" secondItem="8QP-gR-BQM" secondAttribute="leading" id="kda-CS-xK2"/>
+                                    <constraint firstItem="MpF-rA-cgv" firstAttribute="width" secondItem="fbQ-ze-vZf" secondAttribute="width" multiplier="1:3" id="unm-Ma-wUS"/>
+                                    <constraint firstItem="MpF-rA-cgv" firstAttribute="leading" secondItem="8QP-gR-BQM" secondAttribute="leading" constant="20" id="vOY-fR-6CH"/>
+                                    <constraint firstAttribute="trailing" secondItem="fUM-0N-zNk" secondAttribute="trailing" id="x27-bD-Xru"/>
+                                    <constraint firstItem="MpF-rA-cgv" firstAttribute="top" secondItem="fUM-0N-zNk" secondAttribute="bottom" constant="20" id="yp7-9z-JHN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8QP-gR-BQM" firstAttribute="centerY" secondItem="ssu-ui-NKt" secondAttribute="centerY" id="RSv-Fl-1kS"/>
+                            <constraint firstItem="8QP-gR-BQM" firstAttribute="centerX" secondItem="ssu-ui-NKt" secondAttribute="centerX" id="WLR-ha-mhX"/>
+                            <constraint firstAttribute="bottom" secondItem="F7X-l7-MbP" secondAttribute="bottom" id="bv7-iX-w8g"/>
+                            <constraint firstItem="ctw-av-b4h" firstAttribute="trailing" secondItem="8QP-gR-BQM" secondAttribute="trailing" constant="40" id="fJf-c1-XSi"/>
+                            <constraint firstItem="F7X-l7-MbP" firstAttribute="leading" secondItem="ctw-av-b4h" secondAttribute="leading" id="g29-Vo-mj2"/>
+                            <constraint firstItem="F7X-l7-MbP" firstAttribute="top" secondItem="ssu-ui-NKt" secondAttribute="top" id="hTa-VZ-ahX"/>
+                            <constraint firstItem="8QP-gR-BQM" firstAttribute="leading" secondItem="ctw-av-b4h" secondAttribute="leading" constant="40" id="rIq-TW-qCr"/>
+                            <constraint firstItem="F7X-l7-MbP" firstAttribute="trailing" secondItem="ctw-av-b4h" secondAttribute="trailing" id="ym6-Kf-Qqr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ctw-av-b4h"/>
+                    </view>
+                    <connections>
+                        <outlet property="popupCenterY" destination="RSv-Fl-1kS" id="Wh4-oj-2PR"/>
+                        <outlet property="popupImageHeight" destination="MLa-wK-4Mc" id="iXB-eG-0Mr"/>
+                        <outlet property="popupImageView" destination="fUM-0N-zNk" id="fgv-1B-9eX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heK-ZH-yAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup.png" width="532" height="498"/>
+    </resources>
+</document>
