@@ -20,19 +20,40 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        graph1height.changeMultiplier(changeMultiplier: 0.1)
-        graph2height.changeMultiplier(changeMultiplier: 0.3)
-        graph3height.changeMultiplier(changeMultiplier: 0.5)
-        graph4height.changeMultiplier(changeMultiplier: 0.7)
-        graph5height.changeMultiplier(changeMultiplier: 0.9)
-        graph6height.changeMultiplier(changeMultiplier: 1.0)
         
     }
-
+    
+    
+    @IBAction func changeValue(_ sender: UIButton) {
+        if sender.tag == 1 {
+            graph1height = graph1height.changeMultiplier(changeMultiplier: 0.1)
+            graph2height = graph2height.changeMultiplier(changeMultiplier: 0.3)
+            graph3height = graph3height.changeMultiplier(changeMultiplier: 0.5)
+            graph4height = graph4height.changeMultiplier(changeMultiplier: 0.7)
+            graph5height = graph5height.changeMultiplier(changeMultiplier: 0.9)
+            graph6height = graph6height.changeMultiplier(changeMultiplier: 1.0)
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else if sender.tag == 2 {
+            graph1height = graph1height.changeMultiplier(changeMultiplier: 1.0)
+            graph2height = graph2height.changeMultiplier(changeMultiplier: 0.9)
+            graph3height = graph3height.changeMultiplier(changeMultiplier: 0.7)
+            graph4height = graph4height.changeMultiplier(changeMultiplier: 0.5)
+            graph5height = graph5height.changeMultiplier(changeMultiplier: 0.3)
+            graph6height = graph6height.changeMultiplier(changeMultiplier: 0.1)
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
 }
 
 extension NSLayoutConstraint {
-    func changeMultiplier(changeMultiplier: CGFloat) {
+    func changeMultiplier(changeMultiplier: CGFloat) -> NSLayoutConstraint {
         NSLayoutConstraint.deactivate([self])
         
         let newConstraint = NSLayoutConstraint(item: self.firstItem,
@@ -43,6 +64,8 @@ extension NSLayoutConstraint {
         newConstraint.shouldBeArchived = self.shouldBeArchived
         newConstraint.identifier = self.identifier
         NSLayoutConstraint.activate([newConstraint])
+        
+        return newConstraint
     }
 }
 
